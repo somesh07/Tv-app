@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+    <div class="card" style="width: 100%;">
+     <div class="card-header text-center text-white bg-success mb-3">DETAILS ABOUT  CHARACTERS</div>
+    <ul class="list-group list-group-flush">
+
+
+    <li class="list-group-item bg-light">url: {{characterdetails.url}}</li>
+    <li class="list-group-item bg-light">name: {{characterdetails.name}}</li>
+    <li class="list-group-item bg-light">gender: {{characterdetails.gender}}</li>
+    <li class="list-group-item bg-light">culture: {{characterdetails.culture}}</li>
+    <li class="list-group-item bg-light">publisher: {{characterdetails.publisher}}</li>
+    <li class="list-group-item bg-light">father: {{characterdetails.father}}</li>
+    <li class="list-group-item bg-light">mother: {{characterdetails.mother}}</li>
+    <li class="list-group-item bg-light">spouse: {{characterdetails.spouse}}</li>
+    <li class="list-group-item bg-light">born: {{characterdetails.born}}</li>
+    <li class="list-group-item bg-light">books: {{characterdetails.books}}</li>
+    <li class="list-group-item bg-light">povCharacters : <ul>
+        <li class="list-group-item bg-light" *ngFor='let povchar of characterdetails.povBooks;'>
+          {{povchar}}
+        </li>
+      </ul></li>
+      <li class="list-group-item bg-light">tvSeries : <ul>
+          <li *ngFor='let tvSeries of characterdetails.tvSeries;'>
+            {{tvSeries}}
+          </li>
+        </ul></li>
+        <li class="list-group-item bg-light">playedBy : <ul>
+            <li class="list-group-item bg-light" *ngFor='let playedBy of characterdetails.playedBy;'>
+              {{playedBy}}
+            </li>
+          </ul></li>
+
+      
+    
+    
+  </ul>
+  </div>
+  </div>
+  </div>
+  
+
+  

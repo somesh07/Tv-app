@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row">
+    <div class="card" style="width: 100%;">
+     <div class="card-header text-center text-white bg-primary mb-3">DETAILS ABOUT HOUSES</div>
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item bg-light">URL: {{housedetails.url}}</li>
+    <li class="list-group-item bg-light">word: {{housedetails.words}}</li>
+    <li class="list-group-item bg-light">current Lord: {{housedetails.currentLord}}</li>
+    <li class="list-group-item bg-light">Heir: {{housedetails.heir}}</li>
+    <li class="list-group-item bg-light">overlord: {{housedetails.overlord}}</li>
+    <li class="list-group-item bg-light">founded: {{housedetails.founded}}</li>
+    <li class="list-group-item bg-light">founder: {{housedetails.founder}}</li>
+    <li class="list-group-item bg-light">Died Out: {{housedetails.diedOut}}</li>
+    <li class="list-group-item bg-light">founder: {{housedetails.founder}}</li>
+    <li class="list-group-item bg-light">coat Of Arms:{{housedetails.coatOfArms}}</li>  
+    <li class="list-group-item bg-light">Titles : <ul>
+        <li class="list-group-item bg-light" *ngFor='let title of housedetails.titles'>
+          {{title}}
+        </li>
+      </ul></li>
+      <li class="list-group-item bg-light">Ancestral Weapons : <ul>
+          <li class="list-group-item bg-light" *ngFor='let ancestral of housedetails.ancestralWeapons'>
+            {{ancestral}}
+          </li>
+        </ul></li>
+        <li class="list-group-item bg-light">seats : <ul>
+            <li class="list-group-item bg-light" *ngFor='let seat of housedetails.seats'>
+              {{seat}}
+            </li>
+          </ul></li>
+          <li class="list-group-item bg-light">Cadet Branches : <ul>
+              <li *ngFor='let cadet of housedetails.cadetBranches'>
+                {{cadet}}
+              </li>
+            </ul></li>
+      <li class="list-group-item bg-light">Tv Series : <ul>
+          <li class="list-group-item bg-light" *ngFor='let tvSeries of housedetails.tvSeries'>
+            {{tvSeries}}
+          </li>
+        </ul></li>
+        <li class="list-group-item bg-light">Sworn Members : <ul>
+            <li class="list-group-item bg-light" *ngFor='let sworn of housedetails.swornMembers'>
+              {{sworn}}
+            </li>
+          </ul></li>
+
+      
+    
+    
+  </ul>
+  </div>
+  </div>
+  </div>
+  

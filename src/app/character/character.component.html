@@ -1,0 +1,21 @@
+
+<div class="row">
+  <div class="card bg-light mb-3 ml-5 border-dark" style="width: 18rem;" *ngFor='let char of charcters; let i = index' [attr.data-index]="i">
+    <div class="card-header text-center bg-success" *ngIf="char.name && char.aliases">
+        Name: {{char.name}}
+        ({{char.aliases}})
+        </div>
+        <div  class="card-header text-center bg-success" *ngIf="!char.name && char.aliases ">
+           Name : {{char.aliases}}
+        </div>
+
+        <ul class="text-center list-group list-group-flush text-success">
+            <li class="list-group-item"> Gender is {{char.gender}}</li>
+
+        <a [routerLink]="['/character',i+1]" class="btn btn-success">Click for More Details</a>
+
+      </ul>
+      </div>
+    </div>
+  
+ 

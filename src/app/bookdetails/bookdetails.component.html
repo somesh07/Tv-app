@@ -1,0 +1,30 @@
+
+<div class="container">
+<div class="row">
+<div class="card" style="width: 100%;">
+ <div class="card-header text-center text-white bg-warning mb-3">DETAILS ABOUT BOOK</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item bg-light">URL of the book is: {{bookdetails.url}}</li>
+  <li class="list-group-item bg-light"> Name of the book is: {{bookdetails.name}}</li>
+  <li class="list-group-item bg-light">Name of the authors: {{bookdetails.authors}}</li>
+  <li class="list-group-item bg-light">Number Of Pages: {{bookdetails.numberOfPages}}</li>
+  <li class="list-group-item bg-light">Name of the publisher: {{bookdetails.publisher}}</li>
+  <li class="list-group-item bg-light">Name of the country: {{bookdetails.country}}</li>
+  <li class="list-group-item bg-light">Released Date: {{bookdetails.released | date}}</li>
+  <li class="list-group-item bg-light">Characters Details: <ul>
+    <li class="list-group-item bg-light" *ngFor='let char of bookdetails.characters;'>
+        {{char}}
+    </li>
+  </ul></li>
+  <li class="list-group-item bg-light">Pov Characters : <ul>
+      <li class="list-group-item bg-light" *ngFor='let povchar of bookdetails.povCharacters'>
+        {{povchar}}
+      </li>
+    </ul></li>
+
+  
+</ul>
+
+</div>
+</div>
+</div>
